@@ -1,0 +1,423 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body div {
+    font-family: "Garamond";
+}
+
+p { 
+  color: #B2BEB5;
+  font-size: 18px;
+  font-family: "Century Gothic";
+}
+
+footer {
+  display: flex;
+  padding: 10px
+}
+
+/* div */ 
+.container {
+    color: white;
+}
+
+#container-myInfo {
+    margin-left: 20%;
+}
+
+.myInfo-block2, .aboutMe-block2 {
+    padding-left: 10%;
+}
+
+#container-aboutMe, 
+#container-mySkills, 
+#container-myExperience, 
+#container-myContact {
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+#container-myContact {
+  background-image: url('Pictures/universe.gif');
+  width: 700px;
+  height: 500px;
+}
+
+.myInfo-block1 {
+  float: left;
+}
+
+/* div sizing */ 
+
+.myInfo-block2, .aboutMe-block1, .myInfo-hiddenblock {
+    width: 400px;
+}
+
+.aboutMe-block3, 
+.mySkills-block1, 
+.myContact-block1, 
+.myContact-block2, 
+.myExperience-block1, 
+.myExperience-block2  {
+    width: 800px;
+}
+
+.activities {
+    width: 100%;
+}
+
+.myContact-background {
+  position: absolute;
+  z-index: -1;
+  background-image: url('Pictures/universe.gif');
+}
+
+.myContact-block2 p:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.divblock{
+    display: inline-block;
+    position: relative;
+}
+
+ .divblock2 {
+    margin-top: 10%;
+}
+
+.divblock3 {
+    display: inline-block;
+    padding-left: 5%;
+    text-align: center;
+}
+
+li:hover {
+    background-color: grey;
+    font-weight: bold;
+}
+
+/* Skills*/
+
+.skillbar {
+    width: 75%; 
+    background-color: #ddd; 
+    border-radius: 25px;
+}
+
+.skills {
+    text-align: right; 
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: white;
+    border-radius: 25px;
+}
+
+.html {width: 90%; background-color: orangered;} 
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #FFBF00;} 
+.sql {width: 65%; background-color: #F29111;} 
+.csharp {width: 60%; background-color: purple;} 
+.java {width: 75%; background-color: #5382a1;}
+.nodejs {width: 60%; background-color: 	#3C873A;}
+.reactjs {width: 70%; background-color: #61DBFB;}
+.git {width: 55%; background-color: #F1502F;}
+.python {width: 10%; background-color: #4B8BBE;}
+
+.softskills {
+    padding-left: 10%;
+}
+
+/* grid*/
+
+.photogrid {
+    width: 400px;
+    display:flex;
+}
+  
+.photogrid img {
+    float: left;
+    width: 45%;
+    margin: 1.66%;
+    border: 5px solid white;
+} 
+
+.photogrid img:hover {
+    transform: scale(1.2);
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.thumbnail img {
+    width: 120px;
+    display:inline-block;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+  
+  /* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    max-width: 1100px;
+}
+  
+  /* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.mySlides {
+    display: none;
+    background-color: black;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .Tcontainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .Tcontainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #4B8BBE;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    color: black;
+  }
+
+  .content p {
+    color: grey;
+    font-size: 16px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .Tcontainer {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .Tcontainer::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+
+  /* back to top button */
+  .back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    float: right;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #F1502F;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 25px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease
+  }
+
+  .back-to-top :hover {
+    opacity: 0.5;
+  }
+
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }
