@@ -20,23 +20,26 @@ footer {
 /* div */ 
 .container {
     color: white;
+    overflow: visible;
+    width: 800px;
 }
 
-#container-myInfo {
+/* #container-myInfo {
     margin-left: 20%;
-}
+} */
 
 .myInfo-block2, .aboutMe-block2 {
     padding-left: 10%;
 }
 
+#container-myInfo, 
 #container-aboutMe, 
 #container-mySkills, 
 #container-myExperience, 
 #container-myContact {
-    margin-top: 10%;
-    margin-left: 20%;
-}
+    margin-top: 120px;
+    margin-left: 250px;
+} 
 
 #container-myContact {
   background-image: url('Pictures/universe.gif');
@@ -44,7 +47,7 @@ footer {
   height: 500px;
 }
 
-.myInfo-block1 {
+.myInfo-block1, .aboutMe-block1 {
   float: left;
 }
 
@@ -64,7 +67,7 @@ footer {
 }
 
 .activities {
-    width: 100%;
+    width: 800px;
 }
 
 .myContact-background {
@@ -84,11 +87,7 @@ footer {
     position: relative;
 }
 
- .divblock2 {
-    margin-top: 10%;
-}
-
-.divblock3 {
+.divblock2 {
     display: inline-block;
     padding-left: 5%;
     text-align: center;
@@ -276,7 +275,7 @@ li:hover {
     background-color: white;
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 420px;
     margin-left: -3px;
   }
   
@@ -285,7 +284,7 @@ li:hover {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 420px;
   }
   
   /* The circles on the timeline */
@@ -309,7 +308,7 @@ li:hover {
   
   /* Place the container to the right */
   .right {
-    left: 50%;
+    left: 420px;
   }
   
   /* Add arrows to the left container (pointing right) */
